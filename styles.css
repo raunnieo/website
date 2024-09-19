@@ -1,67 +1,52 @@
 /* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px;
+html, body {
+    min-height: 100%;
+    width: 100%;
 }
 
-/* Header Styles */
-header {
-    background-color: #35424a;
-    color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+#main {
+    position: relative;
 }
 
-header h1 {
-    margin: 0;
-    text-align: center;
-    padding-bottom: 10px;
+#page {
+    height: 100vh;
+    width: 100%;
+    position: relative;
 }
 
-/* Navigation Styles */
-nav {
-    background-color: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
+/* Center Content */
+#center {
+    height: 100vh;
+    width: 100%;
+    background-color: #f8e787a9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5vw 4vw;
+    font-size: 2vw;
 }
 
-nav ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
+#center img {
+    height: 4w;
+    width: 6vw;
+    display: block;    
 }
 
-nav li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav a:hover {
-    color: #e8491d;
+#center p {
+    padding: 0vw 0vw;
+    font-size: 1.5vw;
 }
 
 /* Form Styles */
 form {
-    background: #fff;
+    background: #D9C65F;
+    width: 700px;
     padding: 20px;
+    align-content: center;
     margin-top: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);    
@@ -69,6 +54,7 @@ form {
 
 input[type="text"], input[type="email"], input[type="password"] {
     width: 98%;
+    height: 45px;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
@@ -81,7 +67,7 @@ input[type="submit"] {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #e8491d;
+    background-color: #8f3c25;
     color: #fff;
     border: 0;
     border-radius: 5px;
@@ -118,7 +104,7 @@ input[type="submit"]:hover {
 }
 
 .google-signin {
-    width: 100%;
+    width: 700px;
     padding: 10px;
     background-color:#35424a;
     color: #ffffff;
@@ -152,7 +138,6 @@ input[type="submit"]:hover {
 
 .forgot-password {
     display: block;
-    text-align: center;
     margin-top: 20px;
     font-size: 14px;
 }

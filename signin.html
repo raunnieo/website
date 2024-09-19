@@ -5,41 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <header>
-        <h1>Sign In</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="announcements.html">Announcements</a></li>
-            <li><a href="signin.html">Sign In</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-            
-        </ul>
-    </nav>
-    <div class="container">
-        <h2>Login to Your Account</h2>
-        <p>or <a href="signup.html">create an account</a></p>
-        <form onsubmit="signIn(event)">
-            <input id="email" type="text" name="username" placeholder="Username or Email" required>
-            <input id="password" type="password" name="password" placeholder="Password" required>
-            <div class="remember-me">
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me">Remember me</label>
+    <div id="main"></div>
+    <div id="page">
+        <nav>
+            <img src="assests\logo.png" alt="Logo">
+            <div id="nav-part2">
+              <h4 id="round"><a href="index.html">Home</a></h4>
+              <h4 id="round"><a href="about.html">About</a></h4>
+              <h4 id="round"><a href="dashboard.html">Dashboard</a></h4>
+              <h4 id="round"><a href="announcements.html">Announcements</a></h4>
+              <h4 id="SignIn"><a href="signin.html">Sign In</a></h4>
+              <h4 id="SignUp"><a href="signup.html">Sign Up</a></h4>
             </div>
-            <input id="submit-button" type="submit" value="Sign In">
-        </form>
-        <button id = "google-login-btn" class="google-signin">
-            <img src="google-icon.png" alt="Google Icon">
-            Sign in with Google
-        </button>
-        <a href="#" class="forgot-password">Forgotten your password?</a>
+        </nav>
+        <div id="center">
+            <div class="container">
+                <h2>Login to Your Account</h2>
+                <p>or <a href="signup.html">create an account</a></p>
+                <form onsubmit="signIn(event)">
+                    <input id="email" type="text" name="username" placeholder="Username or Email" required>
+                    <input id="password" type="password" name="password" placeholder="Password" required>
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <input id="submit-button" type="submit" value="Sign In">
+                </form>
+                <button id = "google-login-btn" class="google-signin">
+                    <!-- <img src="assests\google-icon.png" alt="Google Icon"> -->
+                    Sign in with Google
+                </button>
+                <a href="#" class="forgot-password">Forgotten your password?</a>
+            </div>
+        </div>    
+        <div id="error-message" style="color:red;"></div>
     </div>
-    <div id="error-message" style="color:red;"></div>
     <script src="script.js" type="module"></script>
 </body>
 </html>
