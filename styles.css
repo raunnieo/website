@@ -64,15 +64,17 @@ form {
     padding: 20px;
     margin-top: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);    
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
-    width: 100%;
+    width: 98%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
+    align-content: center;
+    align-items: center;
 }
 
 input[type="submit"] {
@@ -102,4 +104,55 @@ input[type="submit"]:hover {
 .dashboard-item h3, .announcement h3 {
     margin-top: 0;
     color: #e8491d;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me label {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.google-signin {
+    width: 100%;
+    padding: 10px;
+    background-color:#35424a;
+    color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+.google-signin img {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+/* Add this new hover style */
+.google-signin:hover {
+    background-color: #e8491d;
+    color: white; /* Change text color to white for better contrast */
+}
+
+/* Optional: Change the Google icon to white on hover for better visibility */
+.google-signin:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
 }
