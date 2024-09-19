@@ -5,34 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Announcements</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <header>
-        <h1>Announcements</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="announcements.html">Announcements</a></li>
-            <li><a href="signin.html">Sign In</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-            
-        </ul>
-    </nav>
-    <div class="container">
-        <h2>Latest Announcements</h2>
-        <div class="announcement">
-            <h3>Website Launch</h3>
-            <p>We're excited to announce the launch of our new website!</p>
-            <small>Posted on: September 7, 2024</small>
+    <div id="main"></div>
+    <div id="page">
+        <nav>
+            <img src="assests\logo.png" alt="Logo">
+            <div id="nav-part2">
+              <h4 id="round"><a href="index.html">Home</a></h4>
+              <h4 id="round"><a href="about.html">About</a></h4>
+              <h4 id="round"><a href="dashboard.html">Dashboard</a></h4>
+              <h4 id="round"><a href="announcements.html">Announcements</a></h4>
+              <h4 id="SignIn"><a href="signin.html">Sign In</a></h4>
+              <h4 id="SignUp"><a href="signup.html">Sign Up</a></h4>
+            </div>
+        </nav>
+        <div id="center">
+            <div class="container">
+                <h2>Latest Announcements</h2>
+                <div class="announcement">
+                    <h3>Website Launch</h3>
+                    <p>We're excited to announce the launch of our new website!</p>
+                    <small>Posted on: September 7, 2024</small>
+                </div>
+                <div class="announcement">
+                    <h3>Upcoming Maintenance</h3>
+                    <p>We will be performing routine maintenance on September 10, 2024. The website may be unavailable for a few hours.</p>
+                    <small>Posted on: September 6, 2024</small>
+                </div>
+            </div>
         </div>
-        <div class="announcement">
-            <h3>Upcoming Maintenance</h3>
-            <p>We will be performing routine maintenance on September 10, 2024. The website may be unavailable for a few hours.</p>
-            <small>Posted on: September 6, 2024</small>
-        </div>
-    </div>
 </body>
 </html>
