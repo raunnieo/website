@@ -1,0 +1,152 @@
+nav {
+    padding: 0.5vw 2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav img{
+    height: 10vh;
+    padding-left: 8.1vw;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding-right: 7vw;
+}
+
+#round {
+    /* margin: 0 10px; */
+    padding: 10px 20px;
+    
+    border-radius: 50px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.722);
+    
+    position: relative;
+    /* font-size: 12px; */
+    overflow: hidden;
+}
+
+#round::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    
+}
+
+#round:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+
+#round a{
+    color: rgba(0, 0, 0, 0.722);
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+    font-size: 1.2vw;
+}
+
+#round:hover a{
+    color: #D9C65F;
+}
+
+#round:hover {
+    border: 2px solid #D9C65F;
+
+}
+
+#SignIn {
+    padding: 10px 20px;
+    border: 1px solid   #D9C65F;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all ease 0.4s;
+    position: relative;
+    /* font-size: 12px; */
+    overflow: hidden;
+}
+
+#SignIn::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f8e787a9;
+    left: 0;
+    bottom: -100%;
+    transition: all ease 0.4s;
+}
+
+#SignIn:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+
+#SignIn a{
+    color: #D9C65F;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+    font-size: 1.5vw;
+}
+
+#SignIn:hover a{
+    color: #D9C65F;
+}
+
+#SignUp {
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    background-color: #D9C65F;
+    font-weight: 500;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#SignUp::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f8e787a9;
+    left: 0;
+    bottom: -100%;
+    transition: all ease 0.4s;
+}
+
+#SignUp:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+
+#SignUp a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+    font-size: 1.5vw;
+}
+
+#SignUp:hover a{
+    color: #7c6e1f;
+}
+
+#SignUp:hover {
+    border: 0.3vh solid #7c6e1f;
+}

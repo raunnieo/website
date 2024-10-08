@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SEHPAATHI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        .dashboard-container {
+            padding: 20px;
+            background-color: #f8e787a9;
+            min-height: calc(100vh - 10vh);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #D9C65F;
+        }
+        .main-content {
+            display: flex;
+            margin-top: 20px;
+        }
+        .timeline {
+            flex: 2;
+            padding-right: 20px;
+        }
+        
+        .recent-courses {
+        flex: 1;
+        }
+        
+        .recent-courses h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        .course-item {
+            background-color: var(--color-white);
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            min-height: 150px;
+        }
+
+        .timeline h2, .recent-courses h3 {
+            color: #7c6e1f;
+            margin-bottom: 20px;
+        }
+        .course-description {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 500px;
+            
+        }
+
+        #side {
+            flex: 1;
+        }
+
+        .recent-course-card {
+            background-color: #ffcccb;
+            padding: 45px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            margin-left: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main"></div>   
+    <div id="page">
+        <div id="page1">
+        <nav>
+          <a href="index.html"><img src="assests\logo.png" alt="Logo"></a>
+            <div id="nav-part2">
+              <h4 id="round"><a href="my_courses.html">My Courses</a></h4>
+            <div class="profile-icon">
+                <a href="profile.html">P</a>
+                <div class="dropdown-menu">
+                    <a href="index.html">Logout</a>
+                </div>
+            </div>
+            </div>
+          </nav>
+
+          <div id="center">
+            <div id="side">
+                <h2>Welcome<span> User!</span></h2><br><br>
+                <div class="course-description">
+                    <p>Course description Lorem Ipsum is simply dummy text of the printing</p>
+                    <p>and typesetting industry.</p>
+                    <p>Lorem Ipsum has been the industry's</p>
+                </div>
+            </div>
+            <div class="recent-courses">
+                <br><br><br>
+                <h3>Recent Courses</h3>
+                <div class="course-grid">
+                    <div class="course-item"></div>
+                    <div class="course-item"></div>
+                    <div class="course-item"></div>
+                    <div class="course-item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <footer>
+        <div class="container footer_container">
+          <div class="footer_1">
+            <a href="index.html" class="footer_logo"><h4>SEHPAATHI</h4></a>
+            <p>
+              Welcome to our community! Here, education meets inspiration and
+              endless opportunities await.
+            </p>
+          </div>
+          <div class="footer_2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="announcements.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer_3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer_4">
+            <h4>Contact Us</h4>
+            <div>
+              <p>+91 934 567 8910</p>
+              <!-- <p>tech.niko.coding@gmail.com</p> -->
+            </div>
+            <ul class="footer_socials">
+              <li>
+                <a href="#"
+                  ><i class="ri-facebook-fill" title="FaceBook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-instagram-line" title="Instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-twitter-x-line" title="X"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-github-fill" title="GitHub"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_copyright">
+          <small>© 2024 SEHPAATHI. All rights reserved.</small>
+        </div>
+    </footer>
+
+</div>      
+</body>
+</html>

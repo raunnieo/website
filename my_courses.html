@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Page - SEHPAATHI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        .course-container {
+            padding: 20px;
+            background-color: #f8e787a9;
+            min-height: calc(100vh - 10vh);
+        }
+        .course-header {
+            background-color: #D9C65F;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .course-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+        .main-content, .sidebar {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .activity-button {
+            background-color: #D9C65F;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .activity-button:hover {
+            background-color: #7c6e1f;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="assests\logo.png" alt="Logo"></a>
+          <div id="nav-part2">
+            <h4 id="round"><a href="dashboard_in.html">Dashboard</a></h4>
+          <div class="profile-icon">
+              <a href="profile.html">P</a>
+              <div class="dropdown-menu">
+                  <a href="index.html">Logout</a>
+              </div>
+          </div>
+          </div>
+        </nav>
+
+    <div class="course-container">
+        <div class="course-header">
+            <h1>Course Title</h1>
+            <p>Instructor: John Doe</p>
+        </div>
+        
+        <div class="course-content">
+            <div class="main-content">
+                <h2>Course Description</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam tincidunt, nisl nunc tincidunt nunc, nec aliquam nunc nunc nec nunc.</p>
+                
+                <h2>Course Modules</h2>
+                <ul>
+                    <li>Module 1: Introduction</li>
+                    <li>Module 2: Fundamentals</li>
+                    <li>Module 3: Advanced Concepts</li>
+                    <li>Module 4: Practical Applications</li>
+                </ul>
+                
+                <h2>Upcoming Deadlines</h2>
+                <ul>
+                    <li>Assignment 1 - Due: Oct 15, 2024</li>
+                    <li>Quiz 1 - Due: Oct 20, 2024</li>
+                    <li>Project Proposal - Due: Oct 30, 2024</li>
+                </ul>
+            </div>
+            
+            <div class="sidebar">
+                <h2>Course Activities</h2>
+                <button class="activity-button" onclick="openAttendance()">Take Attendance</button>
+                <button class="activity-button" onclick="openQuiz()">Take Quiz</button>
+                <button class="activity-button" onclick="viewResources()">View Resources</button>
+                <button class="activity-button" onclick="submitAssignment()">Submit Assignment</button>
+                
+                <h2>Announcements</h2>
+                <ul>
+                    <li>New assignment posted!</li>
+                    <li>Guest lecture next week</li>
+                    <li>Office hours changed</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function openAttendance() {
+            alert('Opening attendance form');
+        }
+
+        function openQuiz() {
+            alert('Opening quiz');
+        }
+
+        function viewResources() {
+            alert('Opening course resources');
+        }
+
+        function submitAssignment() {
+            alert('Opening assignment submission form');
+        }
+    </script>
+</body>
+</html>
